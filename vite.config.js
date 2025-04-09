@@ -12,10 +12,10 @@ export default () => {
       global: 'globalThis'
     },
     server: {
-      port: 80,
-      proxy: 'https://1gov.server.api.jg.gov.ng',
+      port: 3000,
+      proxy: 'https://1gov.server.api.jg.gov.ng/',
       cors: {
-        origin: ['https://1gov.server.api.jg.gov.ng', 'http://localhost:3000'],
+        origin: ['https://1gov.server.api.jg.gov.ng/', 'http://localhost:3000'],
         methods: ['GET', 'PATCH', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
         allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With']
       }
