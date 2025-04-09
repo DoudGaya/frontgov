@@ -2,7 +2,9 @@ node_modules
 .env
 *.env
 *.log
+.build
 *.lock
 *.tsbuildinfo
 *.tgz
 *.zip
+json.txt

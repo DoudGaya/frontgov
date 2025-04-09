@@ -1,6 +1,6 @@
 import CryptoJS from "crypto-js";
 export const serverStatus = "Live"
-export const serverLink = serverStatus === 'Dev' ? 'http://localhost:2200/' : 'https://1gov.server.api.jg.gpv.ng/'
+export const serverLink = serverStatus === 'Dev' ? 'http://localhost:2200/' : 'https://1gov.server.api.jg.gov.ng/'
 export const projectTitle = 'Jigawa Finance'
 export const projectCode = "JigawaFinanceCode"
 export const jigawaOneAPIKey= "jg_test_2c5afa2a9bac8a8db2d7955402ae688b4e2871a0552606d618f8d56f9ac4a124" //"jg_test_2b6f2b5272ac1d4699bab75f90520a044e24ec6c86157e2f0eacfd3e14e35425";
