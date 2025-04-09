@@ -122,7 +122,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "vite build --legacy-peer-deps",
     "preview": "vite preview",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint src/**/*.js src/**/*.js",
