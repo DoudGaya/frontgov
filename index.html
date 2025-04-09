@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" href="/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Jigawa Finance">
+    <meta property="og:image" content="/logo.png">
+    <meta property="og:url" content="https://finance.jigawastate.gov.ng">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <link rel="icon" href="/logo.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500;1,600" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      @media (max-width: 767px) {
+        .hide-on-mobile {
+          display: none; /* Hide the div on mobile devices */
+        }
+      }
+
+      .mobile-only {
+        display: none; /* Hide the element on larger screens */
+      }
+
+      /* Media query to show the element on screens with a maximum width of 768 pixels (adjust as needed) */
+      @media (max-width: 768px) {
+        .mobile-only {
+          display: block; /* Show the element on smaller screens */
+        }
+      }
+
+      .main-div {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        /*height: 100vh; !* Set your desired container height *!*/
+      }
+
+      .centered-div {
+        width: 200px; /* Set your desired width */
+      }
+
+      @media print {
+        .hideSide {
+          display: none;
+        }
+      }
+
+    </style>
+    <title>Jigawa Finance</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.js"></script>
+  </body>
+</html>

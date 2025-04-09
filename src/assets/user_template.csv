@@ -1,0 +1,2 @@
+employee_id,first_name,surname, middle_name, email_address, gender,position,department_code,status,password
+E0011,Umar,Ibrahim,BMG,umar@gmail.com,Male,Director,IT,1,123456789

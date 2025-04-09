@@ -1,0 +1,85 @@
+@media print {
+    /*.custom-container {*/
+    /*    display: flex;*/
+    /*    justify-content: space-between;*/
+    /*    flex-direction: column;*/
+    /*    margin-top: 0;*/
+    /*}*/
+
+    /*@media (min-width: 768px) {*/
+    /*    .custom-container {*/
+    /*        flex-direction: row;*/
+    /*    }*/
+    /*}*/
+
+    /*.custom-logo {*/
+    /*    !* No additional styles needed here unless specific styles are required *!*/
+    /*}*/
+
+    /*.custom-date {*/
+    /*    margin-top: 2rem; !* Equivalent to mt-2 in Bootstrap *!*/
+    /*}*/
+
+    /*@media (min-width: 768px) {*/
+    /*    .custom-date {*/
+    /*        margin-top: 0; !* Equivalent to mt-md-0 in Bootstrap *!*/
+    /*    }*/
+    /*}*/
+
+    /*.invoice-title {*/
+    /*    !* Add any additional styles needed for the invoice title here *!*/
+    /*}*/
+
+    /*.invoice-number {*/
+    /*    !* Add any additional styles needed for the invoice number here *!*/
+    /*}*/
+
+    .break-after {
+        page-break-after: always;
+    }
+
+    .move-center{
+        display: flex;
+        justify-content: center; /* Center items horizontally */
+        align-items: center;    /* Center items vertically */
+        flex-direction: column;
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+
+    .move-right {
+     margin-right: 5px;
+    }
+
+    .move-up {
+        margin-top: -20px;
+    }
+
+    .caption-msg{
+        width: 80px;
+        font-weight: bold;
+    }
+
+    .title-msg{
+        font-weight: bold;
+    }
+
+    .caption-header {
+        margin-top: 30px;
+        bottom: 25px !important;
+    }
+
+    .hide-on-print {
+        display: none;
+    }
+
+    .header-card {
+        display: block !important;
+        visibility: visible;
+    }
+
+    .inner-content {
+        padding-left: 2.5rem !important;
+        padding-right: 2.5rem !important;
+    }
+}
