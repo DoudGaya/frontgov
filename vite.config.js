@@ -12,7 +12,7 @@ export default () => {
       global: 'globalThis'
     },
     server: {
-      port: 2200,
+      port: 80,
       proxy: 'https://1gov.server.api.jg.gov.ng',
       cors: {
         origin: ['https://1gov.server.api.jg.gov.ng', 'http://localhost:3000'],
