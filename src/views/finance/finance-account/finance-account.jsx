@@ -1,7 +1,7 @@
 import {connect} from "react-redux"
 import {List, Plus} from "react-feather";
 import {Fragment, useEffect, useState} from "react";
-import {currencyConverter, formatDate, formatDateAndTime, serverLink} from "@src/resources/constants";
+import {currencyConverter, formatDateAndTime, serverLink} from "@src/resources/constants";
 import axios from "axios";
 import {toast} from "react-toastify";
 import Breadcrumbs from "../../../@core/components/breadcrumbs";
@@ -24,7 +24,6 @@ function FinanceAccount({loginData}) {
     const toggleModal = () => setShowModal(!showModal)
 
     const header = ["S/N", "Account Name", "Account No", "Account Type", "Parent Account", "Account Bal.", "Modified By", "Modified Date", "Action"];
-
     const initialValue = {
         account_id: "", parent_account_id: "", account_name: "", account_number: "", account_type: "", created_by: loginData[0]?.user_id,
         updated_by: loginData[0]?.user_id

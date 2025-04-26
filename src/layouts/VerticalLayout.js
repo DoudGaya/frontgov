@@ -8,7 +8,7 @@ import Layout from "@layouts/VerticalLayout";
 import {
     Calendar, Box, Database, Type, UserCheck, Activity, List, Award, Briefcase, Plus, Folder, ZoomOut,
     Home, Mail, CreditCard, Edit3,
-    Users, Key, Tag, Settings, DollarSign, BarChart, UserPlus
+    Users, Key, Tag, Settings, DollarSign, BarChart, UserPlus, Layers, FileText, Link2, Trash
 } from "react-feather";
 import {connect} from "react-redux";
 import {useEffect, useState} from "react";
@@ -347,6 +347,36 @@ const VerticalLayout = (props) => {
                     icon: <BarChart />,
                     navLink: '/hr/pension-report'
                 },
+            ]
+        })
+
+        nav_link.push( {
+            id: 'file_management',
+            title: 'File Manager',
+            perm: 'file_manager',
+            icon: <Layers />,
+            children: [
+                {
+                    id: 'Manage-Files',
+                    title: 'File Manager',
+                    perm: 'file_manager',
+                    icon: <FileText />,
+                    navLink: '/file-manager/folder'
+                },
+                {
+                    id: 'shared-with-me',
+                    title: 'Shared With Me',
+                    perm: 'file_shared_with_me',
+                    icon: <Link2 />,
+                    navLink: '/file-manager/shared-with-me'
+                },
+                {
+                    id: 'archive',
+                    title: 'Bin',
+                    perm: 'file_archived',
+                    icon: <Trash />,
+                    navLink: '/file-manager/archive'
+                }
             ]
         })
 

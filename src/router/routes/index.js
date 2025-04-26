@@ -82,6 +82,13 @@ const BankPaymentReport = lazy(() => import('@src/views/human-resources/payroll/
 const EmployeeTransferRequest = lazy(() => import('@src/views/human-resources/employee/employee-transfer-request'))
 const EmployeeProfile = lazy(() => import('@src/views/human-resources/employee/employee-profile'))
 
+const PublicFileTracking = lazy(() => import('@src/views/file-manager/file/file-public-tracking'))
+const SharedWithMe = lazy(() => import('@src/views/file-manager/shared-with-me/shared-with-me'))
+const FileSharedWithMe = lazy(() => import('@src/views/file-manager/shared-with-me/file-shared-with-me'))
+const FileManager = lazy(() => import('@src/views/file-manager/folder/file-manager'))
+const File = lazy(() => import('@src/views/file-manager/file/file'))
+const FileArchive = lazy(() => import('@src/views/file-manager/archive/archive'))
+
 // ** Merge Routes
 const Routes = [
   {path: "/login", element: <Login />, meta: {layout: "blank"}},
@@ -146,6 +153,12 @@ const Routes = [
   {path: '/hr/employee-transfer-request', element: <EmployeeTransferRequest />, meta: {className: 'app-user-list'}},
   {path: '/hr/employee-profile', element: <EmployeeProfile />, meta: {className: 'app-user-list'}},
 
+  {path: '/file-manager/folder', element: <FileManager />, meta: {className: 'app-user-list'}},
+  {path: '/file-manager/:slug/:slug', element: <File />, meta: {className: 'app-user-list'}},
+  {path: '/file-manager/archive', element: <FileArchive />, meta: {className: 'app-user-list'}},
+  {path: '/file-manager/shared-with-me', element: <SharedWithMe />, meta: {className: 'app-user-list'}},
+  {path: '/file-manager/shared-with-me/:slug/:slug', element: <FileSharedWithMe />, meta: {className: 'app-user-list'}},
+  {path: "/file/tracking", element: <PublicFileTracking />, meta: {layout: "blank"}},
 
   {path: '/', element: <Dashboard />, meta: {className: 'app-user-list'}},
   {path: "/error", element: <Error />, meta: {layout: "blank"}},

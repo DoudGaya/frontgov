@@ -72,6 +72,7 @@
     "react-chartjs-2": "^5.0.1",
     "react-copy-to-clipboard": "^5.1.0",
     "react-country-flag": "^3.0.2",
+    "react-csv": "^2.2.2",
     "react-data-table-component": "^7.5.2",
     "react-dom": "^18.2.0",
     "react-draft-wysiwyg": "^1.15.0",

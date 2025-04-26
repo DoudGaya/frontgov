@@ -86,7 +86,7 @@ function BankPaymentReport({loginData}) {
                     <>
                         <div className="row">
                             <div className="col-md-9 col-8">
-                                <Breadcrumbs title='Allowance Report' data={[{title: 'HR Payroll'}, {title: 'Allowance Report'}]}/>
+                                <Breadcrumbs title='Bank Payment Report' data={[{title: 'HR Payroll'}, {title: 'Bank Payment Report'}]}/>
                             </div>
                         </div>
                         <Row>

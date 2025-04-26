@@ -25,7 +25,7 @@ const permission_list = [
     "finance_report_balance_sheet", "finance_report_bank_reconciliation", "finance_report_income_statement", "finance_report_trial_balance",
     "finance_report_fund_request", "finance_payment_report", "hr_manager", "hr_employee_profile", "hr_employee_transfer_request", "employee_manager", "pension_manager", "salary_manager",
     "hr_payroll", "hr_payroll_settings", "hr_payroll_allowance", "hr_payroll_run_allowance", "hr_payroll_post_schedule", "hr_payroll_allowance_report",
-    "hr_payroll_salary_report", "hr_payroll_bank_payment",
+    "hr_payroll_salary_report", "hr_payroll_bank_payment",  "file_manager", "file_shared_with_me", "file_archived",
     "hr_pension", "hr_pension_settings", "hr_pension_administration", "hr_pension_enrolment", "hr_pension_report",
 ]
 let permission_options = [];
